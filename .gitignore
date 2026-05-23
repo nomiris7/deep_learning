@@ -1,0 +1,13 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+data/
+modelnet10.h5
+pointnet_backbone.pth
+
+# Virtual environments
+.venv
