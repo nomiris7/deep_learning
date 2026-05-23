@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+torch
+torchvision
+torchaudio
+diffusers
+transformers
+accelerate
+scipy
+pillow
+sentencepiece
+protobuf
+audiocraft @ git+https://github.com/facebookresearch/audiocraft.git

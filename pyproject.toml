@@ -1,0 +1,29 @@
+[project]
+name = "lab-4"
+version = "0.1.0"
+description = "Projekt Deep Learning - WSEI / IDEIS"
+readme = "README.md"
+requires-python = "==3.11.*"
+dependencies = [
+    "accelerate>=1.13.0",
+    "audiocraft",
+    "diffusers>=0.37.1",
+    "pillow>=12.2.0",
+    "protobuf>=7.35.0",
+    "scipy>=1.17.1",
+    "sentencepiece>=0.2.1",
+    "torch>=2.1.0",
+    "torchaudio>=2.1.0",
+    "torchvision>=0.16.0",
+    "transformers>=5.9.0",
+]
+
+[tool.uv]
+override-dependencies = [
+    "av>=12.0.0",
+    "torch>=2.3.0",
+    "torchvision>=0.27.0",
+    "torchaudio>=2.3.0"
+]
+[tool.uv.sources]
+audiocraft = { git = "https://github.com/facebookresearch/audiocraft.git" }
