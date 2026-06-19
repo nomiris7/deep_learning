@@ -1,0 +1,8 @@
+Wcześniej model ciągle proponował to samo, a teraz widzi różne opcje (predykcje od 56% do 75%). Zwiększenie "temperatury" ewidentnie odblokowało jego kreatywność.
+
+W 5. iteracji model przepuścił sieć (75.39%), mimo że przewidywania nie pobijały Twojego rekordu z początku (77.24%). O to chodziło! Dzięki marginesowi tolerancji algorytm daje szansę fajnym sieciom, zamiast z góry odrzucać wszystko jak leci.
+
+Surogat obstawiał, że w tej 5. iteracji sieć wyciągnie ~75%, ale po faktycznym odpaleniu PyTorcha wyszło 68%. To żaden błąd – surogat po prostu uczył się na zaledwie 20 przykładach. Teraz zapisał ten wynik i w kolejnych iteracjach będzie już cwaniakiem.
+
+Metryki z końca logu są wręcz podejrzanie świetne (R2=0.98). Wynika to z tego, że model ocenił tu sam siebie na tych samych danych, na których dopiero co się trenował. Żeby to było na 100% obiektywne, trzeba by wydzielić osobny zbiór testowy, ale jako "Proof of Concept", że kod działa – wygląda to kozacko.
+
